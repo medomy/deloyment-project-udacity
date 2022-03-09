@@ -11,17 +11,15 @@ orbs:
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
-    jobs:
-      - build:
-          docker:
-            - image: "cimg/base::stable"
-          steps:
-            - node/install
-            - checkout
-            - run:
-              name: hello
-              command: |
-                echo "hello-world"
-          version: '16.10'
-          # If you are using yarn, change the line below from "npm" to "yarn"
-          pkg-manager: npm
+jobs:
+  - build:
+      docker:
+        - image: "cimg/base::stable"
+      steps:
+        - node/install
+        - checkout
+        - run:
+          name: hello
+          command: |
+            echo "hello-world"
+
