@@ -20,5 +20,3 @@ jobs:
             command: |
               echo "hello-world"
 
-
-
