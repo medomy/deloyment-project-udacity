@@ -15,9 +15,11 @@ jobs:
       docker:
         - image: "cimg/base:stable"
       steps:
-        - node/install
         - checkout
         - aws-cli/setup
+        - node/install:
+            install-yarn: false
+            node-version: '16.13'
         - run:
             name: Front-End install
             command: |
