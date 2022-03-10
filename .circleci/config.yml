@@ -15,9 +15,22 @@ jobs:
         name: win/default # executor type
         size: "medium" # resource class, can be "medium", "large", "xlarge", "2xlarge", defaults to "medium" if not specified
       steps:
+        - node/install
         - checkout
-        - run:  Write-Host 'Hello, Windows'
-            #name: hello
-            #command: |
-            #  echo "hello-world"
+        - run:
+            name: Front-End install
+            command: |
+              npm run frontend:install
+        - run:
+            name: Back-End install
+            command: |
+              npm run backend:install
+        - run:
+            name: Front-End build
+            command: |
+              npm run frontend:build
+        - run:
+            name: Back-End build
+            command: |
+              npm run backend:build
 
