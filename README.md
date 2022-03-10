@@ -1,16 +1,12 @@
-# Udagram
+# Udagram deployment project
 
-This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
+ this project is the provided project for deployment in the advanced web track with udacity and it's deployed on aws servers now.
 
 ## Getting Started
-
-1. Clone this repo locally into the location of your choice.
-1. Move the content of the udagram folder at the root of the repository as this will become the main content of the project.
-1. Open a terminal and navigate to the root of the repo
-1. follow the instructions in the installation step
-
-The project can run but is missing some information to connect to the database and storage service. These will be setup during the course of the project
-
+you can check the following links to the deployed parts :-
+1. front-end client side is deployed on :- [http://static-udagram.s3-website-us-east-1.amazonaws.com](http://static-udagram.s3-website-us-east-1.amazonaws.com).
+2. using EB here's the deployed api : [udagram-api-1.eba-8fmdy4jz.us-east-1.elasticbeanstalk.com](udagram-api-1.eba-8fmdy4jz.us-east-1.elasticbeanstalk.com).
+3. you can check the screenshots for cofigurations in ./screenshots
 ### Dependencies
 
 ```
