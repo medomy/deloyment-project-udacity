@@ -13,7 +13,9 @@ orbs:
 jobs:
   build:
       docker:
-        - image: "cimg/base:stable"
+        - image: circleci/node:6-browsers #"cimg/base:stable"
+          environment:
+            CHROME_BIN: "/usr/bin/google-chrome"
       steps:
         - checkout
         - aws-cli/setup
