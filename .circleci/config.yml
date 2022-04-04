@@ -22,7 +22,7 @@ jobs:
         - aws-cli/setup
         - node/install:
             install-yarn: false
-            node-version: '16.13'
+            node-version: '16.13.1'
         - run:
             name: Front-End install
             command: |
