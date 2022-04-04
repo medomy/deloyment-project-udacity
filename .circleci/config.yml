@@ -35,10 +35,11 @@ jobs:
             name: front-End test
             command: |
               npm run frontend:test
-        - run:
-            name: Back-End test
-            command: |
-              npm run backend:test
+        # no tests in the backend
+        #- run:
+           # name: Back-End test
+            #command: |
+              #npm run backend:test
         - run:
             name: Front-End build
             command: |
