@@ -24,11 +24,6 @@ jobs:
             install-yarn: false
             node-version: '16.13'
         - run:
-          command: |
-            google-chrome --version
-            chromedriver --version
-          name: Check install
-        - run:
             name: Front-End install
             command: |
               npm run frontend:install
