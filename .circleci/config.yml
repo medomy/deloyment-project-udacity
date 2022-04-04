@@ -14,7 +14,7 @@ orbs:
 jobs:
   build:
       docker:
-        - image: cimg/node:16.13.1-browsers #circleci/node:6-browsers #"cimg/base:stable"
+        - image: circleci/node:6-browsers #cimg/node:16.13.1-browsers  #"cimg/base:stable"
           environment:
             CHROME_BIN: "/usr/bin/google-chrome"
       steps:
